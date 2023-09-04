@@ -7,7 +7,6 @@ import { NoSearchResults } from 'src/components/NoSearchResults';
 import { Link } from 'src/components/primitives/Link';
 import { Warning } from 'src/components/primitives/Warning';
 import { TitleWithSearchBar } from 'src/components/TitleWithSearchBar';
-import { MarketWarning } from 'src/components/transactions/Warnings/MarketWarning';
 import { useAppDataContext } from 'src/hooks/app-data-provider/useAppDataProvider';
 import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import MarketAssetsList from 'src/modules/markets/MarketAssetsList';
@@ -47,14 +46,12 @@ export const MarketAssetsListContainer = () => {
       ...reserve,
       ...(reserve.isWrappedBaseAsset
         ? fetchIconSymbolAndName({
-            symbol: currentNetworkConfig.baseAssetSymbol,
-            underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
-          })
+          symbol: currentNetworkConfig.baseAssetSymbol,
+          underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
+        })
         : {}),
     }));
-  const marketFrozen = !reserves.some((reserve) => !reserve.isFrozen);
-  const showFrozenMarketWarning =
-    marketFrozen && ['Harmony', 'Fantom', 'Ethereum AMM'].includes(currentMarketData.marketTitle);
+
   const unfrozenReserves = filteredData.filter((r) => !r.isFrozen && !r.isPaused);
 
   const frozenOrPausedReserves = filteredData.filter((r) => r.isFrozen || r.isPaused);
@@ -90,12 +87,6 @@ export const MarketAssetsListContainer = () => {
         />
       }
     >
-      {showFrozenMarketWarning && (
-        <Box mx={6}>
-          <MarketWarning marketName={currentMarketData.marketTitle} forum />
-        </Box>
-      )}
-
       {displayGho && (
         <Box mb={4}>
           <GhoBanner reserve={ghoReserve} />

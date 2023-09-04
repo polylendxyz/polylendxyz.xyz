@@ -9,7 +9,6 @@ import { ListColumn } from 'src/components/lists/ListColumn';
 import { ListHeaderTitle } from 'src/components/lists/ListHeaderTitle';
 import { ListHeaderWrapper } from 'src/components/lists/ListHeaderWrapper';
 import { Warning } from 'src/components/primitives/Warning';
-import { MarketWarning } from 'src/components/transactions/Warnings/MarketWarning';
 import { AssetCapsProvider } from 'src/hooks/useAssetCaps';
 import { useRootStore } from 'src/store/root';
 import { fetchIconSymbolAndName } from 'src/ui-config/reservePatches';
@@ -92,7 +91,7 @@ const head = [
 ];
 
 export const BorrowAssetsList = () => {
-  const { currentNetworkConfig, currentMarketData, currentMarket } = useProtocolDataContext();
+  const { currentNetworkConfig, currentMarket } = useProtocolDataContext();
   const { user, reserves, marketReferencePriceInUsd, loading } = useAppDataContext();
   const [displayGho] = useRootStore((store) => [store.displayGho]);
   const theme = useTheme();
@@ -129,9 +128,9 @@ export const BorrowAssetsList = () => {
         iconSymbol: reserve.iconSymbol,
         ...(reserve.isWrappedBaseAsset
           ? fetchIconSymbolAndName({
-              symbol: baseAssetSymbol,
-              underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
-            })
+            symbol: baseAssetSymbol,
+            underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
+          })
           : {}),
       };
     });
@@ -142,21 +141,21 @@ export const BorrowAssetsList = () => {
   const collateralUsagePercent = maxBorrowAmount.eq(0)
     ? '0'
     : valueToBigNumber(user?.totalBorrowsMarketReferenceCurrency || '0')
-        .div(maxBorrowAmount)
-        .toFixed();
+      .div(maxBorrowAmount)
+      .toFixed();
 
   const borrowReserves =
     user?.totalCollateralMarketReferenceCurrency === '0' || +collateralUsagePercent >= 0.98
       ? tokensToBorrow
       : tokensToBorrow.filter(
-          ({ availableBorrowsInUSD, totalLiquidityUSD, symbol }) =>
-            availableBorrowsInUSD !== '0.00' &&
-            (totalLiquidityUSD !== '0' ||
-              displayGho({
-                symbol,
-                currentMarket,
-              }))
-        );
+        ({ availableBorrowsInUSD, totalLiquidityUSD, symbol }) =>
+          availableBorrowsInUSD !== '0.00' &&
+          (totalLiquidityUSD !== '0' ||
+            displayGho({
+              symbol,
+              currentMarket,
+            }))
+      );
 
   const { value: ghoReserve, filtered: filteredReserves } = findAndFilterGhoReserve(borrowReserves);
   const sortedReserves = handleSortDashboardReserves(
@@ -215,17 +214,6 @@ export const BorrowAssetsList = () => {
       subChildrenComponent={
         <>
           <Box sx={{ px: 6, mb: 4 }}>
-            {borrowDisabled && currentNetworkConfig.name === 'Harmony' && (
-              <MarketWarning marketName="Harmony" />
-            )}
-
-            {borrowDisabled && currentNetworkConfig.name === 'Fantom' && (
-              <MarketWarning marketName="Fantom" />
-            )}
-            {borrowDisabled && currentMarketData.marketTitle === 'Ethereum AMM' && (
-              <MarketWarning marketName="Ethereum AMM" />
-            )}
-
             {+collateralUsagePercent >= 0.98 && (
               <Warning severity="error">
                 <Trans>

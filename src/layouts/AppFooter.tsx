@@ -4,7 +4,6 @@ import { Box, styled, SvgIcon, Typography } from '@mui/material';
 import { Link } from 'src/components/primitives/Link';
 
 import DiscordIcon from '/public/icons/discord.svg';
-import LensLogoIcon from '/public/icons/lens-logo.svg';
 
 interface StyledLinkProps {
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -21,12 +20,7 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 
 const FOOTER_ICONS = [
   {
-    href: 'https://lenster.xyz/u/aaveaave',
-    icon: <LensLogoIcon />,
-    title: 'PolyLend',
-  },
-  {
-    href: 'https://twitter.com/aaveaave?s=11&t=ZixFmUt1SIHLEMvx18gUGw',
+    href: 'https://twitter.com/polylendxyz',
     icon: <Twitter />,
     title: 'Lens',
   },
@@ -36,7 +30,7 @@ const FOOTER_ICONS = [
     title: 'Discord',
   },
   {
-    href: 'https://github.com/aave',
+    href: 'https://github.com/polylendxyz',
     icon: <GitHub />,
     title: 'Github',
   },
@@ -45,9 +39,9 @@ const FOOTER_ICONS = [
 export function AppFooter() {
   const FOOTER_LINKS = [
     {
-      href: 'https://aave.com/term-of-use/',
-      label: <Trans>Terms</Trans>,
-      key: 'Terms',
+      href: 'https://docs.polylend.xyz',
+      label: <Trans>Documentation</Trans>,
+      key: 'Documentation',
     },
     {
       href: 'https://aave.com/privacy-policy/',

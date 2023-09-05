@@ -62,10 +62,11 @@ export const GovernanceTopPanel = () => {
 
           <Typography sx={{ color: '#8E92A3', maxWidth: '824px' }}>
             <Trans>
-              PolyLend is a fully decentralized, community governed protocol by the AAVE token-holders.
-              AAVE token-holders collectively discuss, propose, and vote on upgrades to the
-              protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new
-              proposals or delagate to an address of choice. To learn more check out the Governance
+              PolyLend is a fully decentralized, community governed protocol by the PLEND
+              token-holders. PLEND token-holders collectively discuss, propose, and vote on upgrades
+              to the protocol. PLEND token-holders (Ethereum network only) can either vote
+              themselves on new proposals or delagate to an address of choice. To learn more check
+              out the Governance
             </Trans>{' '}
             <Link
               onClick={() => trackEvent(GENERAL.EXTERNAL_LINK, { Link: 'FAQ Docs Governance' })}

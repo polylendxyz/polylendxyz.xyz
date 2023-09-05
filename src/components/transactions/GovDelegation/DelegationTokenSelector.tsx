@@ -20,7 +20,7 @@ export type DelegationToken = {
 
 export enum DelegationTokenType {
   BOTH = 0,
-  AAVE,
+  PLEND,
   STKAAVE,
 }
 
@@ -113,15 +113,15 @@ export const DelegationTokenSelector = ({
           value={DelegationTokenType.BOTH}
           control={<Radio size="small" />}
           componentsProps={{ typography: { width: '100%' } }}
-          label={<TokenRow symbol={['AAVE', 'stkAAVE']} amount={Number(aave) + Number(stkAave)} />}
+          label={<TokenRow symbol={['PLEND', 'stkAAVE']} amount={Number(aave) + Number(stkAave)} />}
           data-cy={`delegate-token-both`}
         />
         <FormControlLabel
-          value={DelegationTokenType.AAVE}
+          value={DelegationTokenType.PLEND}
           control={<Radio size="small" />}
           componentsProps={{ typography: { width: '100%' } }}
-          label={<TokenRow symbol="AAVE" amount={aave} />}
-          data-cy={`delegate-token-AAVE`}
+          label={<TokenRow symbol="PLEND" amount={aave} />}
+          data-cy={`delegate-token-PLEND`}
         />
         <FormControlLabel
           value={DelegationTokenType.STKAAVE}

@@ -29,10 +29,15 @@ export const navigation: Navigation[] = [
     dataCy: 'menuDocs',
   },
   {
-    link: 'https://docs.polylend.xyz/security',
-    title: t`Security`,
-    dataCy: 'menuDocs',
+    link: 'https://discord.com/invite/W9bNReDF',
+    title: t`Discord`,
+    dataCy: 'menuDiscord',
   },
+  // {
+  //   link: 'https://docs.polylend.xyz/security',
+  //   title: t`Security`,
+  //   dataCy: 'menuDocs',
+  // },
 ];
 
 interface MoreMenuItem extends Navigation {

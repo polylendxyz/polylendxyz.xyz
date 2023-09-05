@@ -22,8 +22,8 @@ export const GetABPTokenModal = ({ open, close }: GetABPTokenModalProps) => {
         </Typography>
         <Typography sx={{ my: 6 }}>
           <Trans>
-            The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by
-            depositing a combination of AAVE + ETH in the Balancer liquidity pool. You can then
+            The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT
+            by depositing a combination of PLEND + ETH in the Balancer liquidity pool. You can then
             stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives.
           </Trans>
         </Typography>

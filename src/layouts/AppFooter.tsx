@@ -25,7 +25,7 @@ const FOOTER_ICONS = [
     title: 'Lens',
   },
   {
-    href: 'https://discord.com/invite/aave',
+    href: 'https://discord.com/invite/W9bNReDF',
     icon: <DiscordIcon />,
     title: 'Discord',
   },

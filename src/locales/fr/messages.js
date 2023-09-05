@@ -17,8 +17,8 @@
       ['0'],
       '</2>',
     ],
-    'AAVE holders (Ethereum network only) can stake their AAVE in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, up to 30% of your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol.':
-      'AAVE holders (Ethereum network only) can stake their AAVE in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, up to 30% of your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol.',
+    'PLEND holders (Ethereum network only) can stake their PLEND in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, up to 30% of your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol.':
+      'PLEND holders (Ethereum network only) can stake their PLEND in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, up to 30% of your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol.',
     APR: 'APR',
     APY: 'APY',
     'APY change': 'APY change',
@@ -32,8 +32,8 @@
     'PolyLend Governance': 'Gouvernance PolyLend',
     'PolyLend aToken': 'PolyLend aToken',
     'PolyLend debt token': 'PolyLend debt token',
-    'PolyLend is a fully decentralized, community governed protocol by the AAVE token-holders. AAVE token-holders collectively discuss, propose, and vote on upgrades to the protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance':
-      'PolyLend is a fully decentralized, community governed protocol by the AAVE token-holders. AAVE token-holders collectively discuss, propose, and vote on upgrades to the protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance',
+    'PolyLend is a fully decentralized, community governed protocol by the PLEND token-holders. PLEND token-holders collectively discuss, propose, and vote on upgrades to the protocol. PLEND token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance':
+      'PolyLend is a fully decentralized, community governed protocol by the PLEND token-holders. PLEND token-holders collectively discuss, propose, and vote on upgrades to the protocol. PLEND token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance',
     'PolyLend per month': 'PolyLend par mois',
     'About GHO': 'About GHO',
     Account: 'Compte',
@@ -209,15 +209,15 @@
     'Can be executed': 'Peut être exécuté',
     Cancel: 'Cancel',
     'Cannot disable E-Mode': 'Cannot disable E-Mode',
-    "Choose how much voting/proposition power to give to someone else by delegating some of your AAVE or stkAAVE balance. Your tokens will remain in your account, but your delegate will be able to vote or propose on your behalf. If your AAVE or stkAAVE balance changes, your delegate's voting/proposition power will be automatically adjusted.":
-      "Choose how much voting/proposition power to give to someone else by delegating some of your AAVE or stkAAVE balance. Your tokens will remain in your account, but your delegate will be able to vote or propose on your behalf. If your AAVE or stkAAVE balance changes, your delegate's voting/proposition power will be automatically adjusted.",
+    "Choose how much voting/proposition power to give to someone else by delegating some of your PLEND or stkAAVE balance. Your tokens will remain in your account, but your delegate will be able to vote or propose on your behalf. If your PLEND or stkAAVE balance changes, your delegate's voting/proposition power will be automatically adjusted.":
+      "Choose how much voting/proposition power to give to someone else by delegating some of your PLEND or stkAAVE balance. Your tokens will remain in your account, but your delegate will be able to vote or propose on your behalf. If your PLEND or stkAAVE balance changes, your delegate's voting/proposition power will be automatically adjusted.",
     'Choose one of the on-ramp services': 'Choose one of the on-ramp services',
     Claim: 'Réclamer',
     'Claim all': 'Réclamer tout',
     'Claim all rewards': 'Réclamez toutes les récompenses',
     'Claim {0}': ['Réclamer ', ['0']],
     'Claim {symbol}': ['Claim ', ['symbol']],
-    'Claimable AAVE': 'AAVE Réclamable',
+    'Claimable PLEND': 'PLEND Réclamable',
     Claimed: 'Claimed',
     Claiming: 'Réclamer',
     'Claiming {symbol}': ['Claiming ', ['symbol']],
@@ -277,7 +277,7 @@
     'Disconnect Wallet': 'Déconnecter le portefeuille',
     'Discord channel': 'Discord channel',
     Discount: 'Discount',
-    'Discount applied for <0/> staking AAVE': 'Discount applied for <0/> staking AAVE',
+    'Discount applied for <0/> staking PLEND': 'Discount applied for <0/> staking PLEND',
     'Discount model parameters': 'Discount model parameters',
     'Discount parameters are decided by the PolyLend community and may be changed over time. Check Governance for updates and vote to participate. <0>Learn more</0>':
       'Discount parameters are decided by the PolyLend community and may be changed over time. Check Governance for updates and vote to participate. <0>Learn more</0>',
@@ -315,10 +315,10 @@
     'Enter an amount': 'Entrez un montant',
     'Error connecting. Try refreshing the page.':
       "Erreur de connexion. Essayez d'actualiser la page.",
-    'Estimated compounding interest, including discount for Staking {0}AAVE in Safety Module.': [
+    'Estimated compounding interest, including discount for Staking {0}PLEND in Safety Module.': [
       'Estimated compounding interest, including discount for Staking ',
       ['0'],
-      'AAVE in Safety Module.',
+      'PLEND in Safety Module.',
     ],
     'Exceeds the discount': 'Exceeds the discount',
     Executed: 'Réalisé',
@@ -680,7 +680,7 @@
       "Le taux d'intérêt stable <0>restera le même</0> pendant toute la durée de votre prêt. Recommandé pour les périodes de prêt à long terme et pour les utilisateurs qui préfèrent la prévisibilité.",
     Stablecoin: 'Stablecoin',
     Stake: 'Stake',
-    'Stake AAVE': 'Stake AAVE',
+    'Stake PLEND': 'Stake PLEND',
     'Stake ABPT': 'Stake ABPT',
     'Stake cooldown activated': 'Stake cooldown activated',
     Staked: 'Staké',
@@ -726,8 +726,8 @@
     'Thank you for voting!!': 'Thank you for voting!!',
     'The % of your total borrowing power used. This is based on the amount of your collateral supplied and the total amount that you can borrow.':
       "Le % de votre pouvoir d'emprunt total utilisé. Ceci est basé sur le montant de votre garantie fournie et le montant total que vous pouvez emprunter.",
-    'The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by depositing a combination of AAVE + ETH in the Balancer liquidity pool. You can then stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives.':
-      'The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by depositing a combination of AAVE + ETH in the Balancer liquidity pool. You can then stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives.',
+    'The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by depositing a combination of PLEND + ETH in the Balancer liquidity pool. You can then stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives.':
+      'The PolyLend Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by depositing a combination of PLEND + ETH in the Balancer liquidity pool. You can then stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives.',
     'The PolyLend Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates.':
       'The PolyLend Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates.',
     'The Maximum LTV ratio represents the maximum borrowing power of a specific collateral. For example, if a collateral has an LTV of 75%, the user can borrow up to 0.75 worth of ETH in the principal currency for every 1 ETH worth of collateral.':
@@ -886,8 +886,8 @@
       'Update: Disruptions reported for WETH, WBTC, WMATIC, and USDT. AIP 230 will resolve the disruptions and the market will be operating as normal on ~26th May 13h00 UTC.',
     'Use it to vote for or against active proposals.':
       'Use it to vote for or against active proposals.',
-    'Use your AAVE and stkAAVE balance to delegate your voting and proposition powers. You will not be sending any tokens, only the rights to vote and propose changes to the protocol. You can re-delegate or revoke power to self at any time.':
-      'Use your AAVE and stkAAVE balance to delegate your voting and proposition powers. You will not be sending any tokens, only the rights to vote and propose changes to the protocol. You can re-delegate or revoke power to self at any time.',
+    'Use your PLEND and stkAAVE balance to delegate your voting and proposition powers. You will not be sending any tokens, only the rights to vote and propose changes to the protocol. You can re-delegate or revoke power to self at any time.':
+      'Use your PLEND and stkAAVE balance to delegate your voting and proposition powers. You will not be sending any tokens, only the rights to vote and propose changes to the protocol. You can re-delegate or revoke power to self at any time.',
     'Used as collateral': 'Utilisé comme collatéral',
     'User cannot withdraw more than the available balance':
       "L'utilisateur ne peut pas retirer plus que le solde disponible",
@@ -900,8 +900,8 @@
     'User is in isolation mode': "L'utilisateur est en mode d'isolement",
     'User is trying to borrow multiple assets including a siloed one':
       "L'utilisateur essaie d'emprunter plusieurs actifs, y compris un en silo",
-    'Users who stake AAVE in Safety Module (i.e. stkAAVE holders) receive a discount on GHO borrow interest rate. The discount applies to 100 GHO for every 1 stkAAVE held. Use the calculator below to see GHO borrow rate with the discount applied.':
-      'Users who stake AAVE in Safety Module (i.e. stkAAVE holders) receive a discount on GHO borrow interest rate. The discount applies to 100 GHO for every 1 stkAAVE held. Use the calculator below to see GHO borrow rate with the discount applied.',
+    'Users who stake PLEND in Safety Module (i.e. stkAAVE holders) receive a discount on GHO borrow interest rate. The discount applies to 100 GHO for every 1 stkAAVE held. Use the calculator below to see GHO borrow rate with the discount applied.':
+      'Users who stake PLEND in Safety Module (i.e. stkAAVE holders) receive a discount on GHO borrow interest rate. The discount applies to 100 GHO for every 1 stkAAVE held. Use the calculator below to see GHO borrow rate with the discount applied.',
     'Utilization Rate': "Taux d'utilisation",
     'VIEW TX': 'VIEW TX',
     'VOTE NAY': 'VOTER NON',
@@ -979,8 +979,8 @@
     'You do not have supplies in this currency': "Vous n'avez pas de fournitures dans cette devise",
     'You don’t have enough funds in your wallet to repay the full amount. If you proceed to repay with your current amount of funds, you will still have a small borrowing position in your dashboard.':
       "Vous n'avez pas assez de fonds dans votre portefeuille pour rembourser le montant total. Si vous continuez à rembourser avec votre montant actuel de fonds, vous aurez toujours une petite position d'emprunt dans votre tableau de bord.",
-    'You have no AAVE/stkAAVE balance to delegate.':
-      'You have no AAVE/stkAAVE balance to delegate.',
+    'You have no PLEND/stkAAVE balance to delegate.':
+      'You have no PLEND/stkAAVE balance to delegate.',
     'You have not borrow yet using this currency': 'You have not borrow yet using this currency',
     'You may borrow up to <0/> GHO at <1/> (max discount)':
       'You may borrow up to <0/> GHO at <1/> (max discount)',
@@ -1001,13 +1001,13 @@
     'Your health factor and loan to value determine the assurance of your collateral. To avoid liquidations you can supply more collateral or repay borrow positions.':
       "Votre facteur de santé et votre prêt à la valeur déterminent l'assurance de votre collatéral. Pour éviter les liquidations, vous pouvez fournir plus de garanties ou rembourser les positions d'emprunt.",
     'Your info': 'Vos informations',
-    'Your proposition power is based on your AAVE/stkAAVE balance and received delegations.':
-      'Your proposition power is based on your AAVE/stkAAVE balance and received delegations.',
+    'Your proposition power is based on your PLEND/stkAAVE balance and received delegations.':
+      'Your proposition power is based on your PLEND/stkAAVE balance and received delegations.',
     'Your reward balance is 0': 'Votre solde de récompenses est de 0',
     'Your supplies': 'Vos ressources',
     'Your voting info': 'Vos informations de vote',
-    'Your voting power is based on your AAVE/stkAAVE balance and received delegations.':
-      'Your voting power is based on your AAVE/stkAAVE balance and received delegations.',
+    'Your voting power is based on your PLEND/stkAAVE balance and received delegations.':
+      'Your voting power is based on your PLEND/stkAAVE balance and received delegations.',
     'Your {name} wallet is empty. Purchase or transfer assets or use <0>{0}</0> to transfer your {network} assets.':
       [
         'Your ',

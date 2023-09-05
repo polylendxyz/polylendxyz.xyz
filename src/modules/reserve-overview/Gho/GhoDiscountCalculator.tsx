@@ -255,7 +255,7 @@ export const GhoDiscountCalculator = () => {
         </Box>
         <Box sx={{ width: '100%' }}>
           <CalculatorInput
-            title="Staked AAVE amount"
+            title="Staked PLEND amount"
             value={stkAave}
             disabled={ghoLoadingData}
             tokenSymbol="stkAAVE"
@@ -295,7 +295,7 @@ export const GhoDiscountCalculator = () => {
         </Box>
         <Box sx={{ width: '100%' }}>
           <CalculatorInput
-            title="Staked AAVE amount"
+            title="Staked PLEND amount"
             value={stkAave}
             disabled={ghoLoadingData}
             tokenSymbol="stkAAVE"
@@ -316,7 +316,7 @@ export const GhoDiscountCalculator = () => {
       </Typography>
       <Typography variant="caption" color="text.secondary" mb={6}>
         <Trans>
-          Users who stake AAVE in Safety Module (i.e. stkAAVE holders) receive a discount on GHO
+          Users who stake PLEND in Safety Module (i.e. stkAAVE holders) receive a discount on GHO
           borrow interest rate. The discount applies to 100 GHO for every 1 stkAAVE held. Use the
           calculator below to see GHO borrow rate with the discount applied.
         </Trans>
@@ -428,8 +428,8 @@ const GhoDiscountParametersComponent: React.FC<{
       </Box>
       <Typography variant="caption" color="text.secondary">
         <Trans>
-          Discount parameters are decided by the PolyLend community and may be changed over time. Check
-          Governance for updates and vote to participate.{' '}
+          Discount parameters are decided by the PolyLend community and may be changed over time.
+          Check Governance for updates and vote to participate.{' '}
           <Link
             href="https://governance.aave.com"
             sx={{ textDecoration: 'underline' }}

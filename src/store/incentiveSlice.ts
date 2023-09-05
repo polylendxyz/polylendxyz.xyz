@@ -32,13 +32,26 @@ export const createIncentiveSlice: StateCreator<
     });
     const promises: Promise<void>[] = [];
 
+    const blacklistedRewards = ['0x0000000000000000000000000000000000000000'];
+
     try {
       promises.push(
         poolDataProviderContract
           .getReservesIncentivesDataHumanized({
             lendingPoolAddressProvider: currentMarketData.addresses.LENDING_POOL_ADDRESS_PROVIDER,
           })
-          .then((reserveIncentiveData) => set({ reserveIncentiveData }))
+          .then((reserveIncentiveData) => {
+            const filtered = reserveIncentiveData.map((r) => ({
+              ...r,
+              aIncentiveData: {
+                ...r.aIncentiveData,
+                rewardsTokenInformation: r.aIncentiveData.rewardsTokenInformation.filter(
+                  (a) => !blacklistedRewards.includes(a.rewardTokenAddress)
+                ),
+              },
+            }));
+            set({ reserveIncentiveData: filtered });
+          })
       );
       if (account) {
         promises.push(

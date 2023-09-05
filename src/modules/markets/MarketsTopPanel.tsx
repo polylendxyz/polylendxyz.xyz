@@ -36,7 +36,7 @@ export const MarketsTopPanel = () => {
       containerProps={marketContainerProps}
       pageTitle={'Welcome to PolyLend'}
       pageDescription={
-        'A decentralized money-market that allows you to deposit/borrow assets with high capital efficiency.'
+        'A powerful money-market that allows you to deposit/borrow assets with high capital efficiency.'
       }
       withMarketSwitcher
     >

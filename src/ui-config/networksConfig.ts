@@ -87,8 +87,8 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     networkLogoPath: '/icons/networks/polygon.svg',
     bridge: {
       icon: '/icons/bridge/polygon.svg',
-      name: 'Polygon PoS Bridge',
-      url: 'https://wallet.polygon.technology/polygon/bridge',
+      name: 'Polygon zkEVM Bridge',
+      url: 'https://wallet.polygon.technology/zkEVM-Bridge/bridge',
     },
   },
 } as const;

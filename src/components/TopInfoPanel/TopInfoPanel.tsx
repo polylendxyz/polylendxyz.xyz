@@ -29,6 +29,7 @@ export const TopInfoPanel = ({
         color: '#F1F1F3',
       }}
     >
+      <div className="animated-bg-cover" />
       <Container {...containerProps} sx={{ ...containerProps.sx, pb: 0 }}>
         <Box sx={{ px: { xs: 4, xsm: 6 } }}>
           {!titleComponent && (

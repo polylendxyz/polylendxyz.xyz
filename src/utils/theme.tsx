@@ -135,7 +135,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
     palette: {
       mode,
       primary: {
-        main: getColor('#383D51', '#EAEBEF'),
+        main: getColor('#333', '#EAEBEF'),
         light: getColor('#62677B', '#F1F1F3'),
         dark: getColor('#292E41', '#D2D4DC'),
         contrast: getColor('#FFFFFF', '#0F121D'),
@@ -178,13 +178,13 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         secondary: getColor('#62677B', '#A5A8B6'),
         disabled: getColor('#D2D4DC', '#62677B'),
         muted: getColor('#A5A8B6', '#8E92A3'),
-        highlight: getColor('#383D51', '#C9B3F9'),
+        highlight: getColor('#333', '#C9B3F9'),
       },
       background: {
         default: getColor('#F1F1F3', '#1B2030'),
         paper: getColor('#FFFFFF', '#292E41'),
-        surface: getColor('#F7F7F9', '#383D51'),
-        surface2: getColor('#F9F9FB', '#383D51'),
+        surface: getColor('#F7F7F9', '#333'),
+        surface2: getColor('#F9F9FB', '#333'),
         header: getColor('#111', '#1B2030'),
         disabled: getColor('#EAEBEF', '#EBEBEF14'),
       },
@@ -403,7 +403,7 @@ export function getThemedComponents(theme: Theme) {
               color: theme.palette.mode === 'light' ? '#62677B' : '#C9B3F9',
             },
             '& .MuiSlider-track': {
-              color: theme.palette.mode === 'light' ? '#383D51' : '#9C93B3',
+              color: theme.palette.mode === 'light' ? '#333' : '#9C93B3',
             },
           },
         },
@@ -436,7 +436,7 @@ export function getThemedComponents(theme: Theme) {
               color: theme.palette.common.white,
               border: '1px solid',
               borderColor: '#EBEBED1F',
-              backgroundColor: '#383D51',
+              backgroundColor: '#333',
               '&:hover, &.Mui-focusVisible': {
                 backgroundColor: theme.palette.background.header,
               },

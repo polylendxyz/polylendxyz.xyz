@@ -1,5 +1,3 @@
-import { ChainId } from '@aave/contract-helpers';
-import { AaveV3Ethereum } from '@bgd-labs/aave-address-book';
 import { ReactNode } from 'react';
 
 // Enable for premissioned market
@@ -9,7 +7,7 @@ export type MarketDataType = {
   v3?: boolean;
   marketTitle: string;
   // the network the market operates on
-  chainId: ChainId;
+  chainId: number;
   enabledFeatures?: {
     liquiditySwap?: boolean;
     staking?: boolean;
@@ -56,15 +54,15 @@ export type MarketDataType = {
 };
 
 export enum CustomMarket {
-  proto_mainnet_v3 = 'proto_mainnet_v3',
+  proto_zkevm = 'proto_zkevm',
 }
 
 export const marketsData: {
   [key in keyof typeof CustomMarket]: MarketDataType;
 } = {
-  [CustomMarket.proto_mainnet_v3]: {
-    marketTitle: 'Ethereum',
-    chainId: ChainId.mainnet,
+  [CustomMarket.proto_zkevm]: {
+    marketTitle: 'Polygon zkEVM',
+    chainId: 1101,
     v3: true,
     enabledFeatures: {
       governance: false,
@@ -75,15 +73,14 @@ export const marketsData: {
       withdrawAndSwitch: false,
       debtSwitch: false,
     },
-    subgraphUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3',
+    // subgraphUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3',
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: AaveV3Ethereum.POOL_ADDRESSES_PROVIDER,
-      LENDING_POOL: AaveV3Ethereum.POOL,
-      WETH_GATEWAY: AaveV3Ethereum.WETH_GATEWAY,
-      WALLET_BALANCE_PROVIDER: AaveV3Ethereum.WALLET_BALANCE_PROVIDER,
-      UI_POOL_DATA_PROVIDER: AaveV3Ethereum.UI_POOL_DATA_PROVIDER,
-      UI_INCENTIVE_DATA_PROVIDER: AaveV3Ethereum.UI_INCENTIVE_DATA_PROVIDER,
-      COLLECTOR: AaveV3Ethereum.COLLECTOR,
+      LENDING_POOL_ADDRESS_PROVIDER: '0x2B268382D13365d241886098a3dD45D20F5FEc2D',
+      LENDING_POOL: '0xC37607d4F73385B35f6c3ec16f63DE0eBC73DC86',
+      WETH_GATEWAY: '0x4A018E52478d8b28B907B35E9E81dDF2b715e1A7',
+      WALLET_BALANCE_PROVIDER: '0x67Fd2B99D6D54badC09a6892E32eC978f91F5563',
+      UI_POOL_DATA_PROVIDER: '0x3E7Ae28325dE809F15599268bC560B755ebdCB5e',
+      UI_INCENTIVE_DATA_PROVIDER: '0x1B04Cf46070B5E43EbAE813Fc0b96c2bF3ca3Cd1',
     },
   },
 } as const;

@@ -30,8 +30,8 @@ export const TopInfoPanel = ({
       }}
     >
       <div className="animated-bg-cover" />
-      <Container {...containerProps} sx={{ ...containerProps.sx, pb: 0 }}>
-        <Box sx={{ px: { xs: 4, xsm: 6 } }}>
+      <Container {...containerProps} sx={{ ...containerProps.sx, pb: 0, zIndex: 2 }}>
+        <Box sx={{ px: { xs: 4, xsm: 6 }, zIndex: 1 }}>
           {!titleComponent && (
             <PageTitle
               pageDescription={pageDescription}

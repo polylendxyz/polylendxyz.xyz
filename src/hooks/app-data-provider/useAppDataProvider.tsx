@@ -163,6 +163,7 @@ export const AppDataProvider: React.FC = ({ children }) => {
           );
           if (reserve.aIncentivesData) {
             reserve.aIncentivesData.forEach((incentive) => {
+              console.log('hit', incentive);
               acc.positiveProportion = acc.positiveProportion.plus(
                 new BigNumber(incentive.incentiveAPR).multipliedBy(value.underlyingBalanceUSD)
               );
@@ -237,9 +238,9 @@ export const AppDataProvider: React.FC = ({ children }) => {
   const debtAPY = proportions.negativeProportion.dividedBy(user.totalBorrowsUSD).toNumber();
   const netAPY =
     (earnedAPY || 0) *
-      (Number(user.totalLiquidityUSD) / Number(user.netWorthUSD !== '0' ? user.netWorthUSD : '1')) -
+    (Number(user.totalLiquidityUSD) / Number(user.netWorthUSD !== '0' ? user.netWorthUSD : '1')) -
     (debtAPY || 0) *
-      (Number(user.totalBorrowsUSD) / Number(user.netWorthUSD !== '0' ? user.netWorthUSD : '1'));
+    (Number(user.totalBorrowsUSD) / Number(user.netWorthUSD !== '0' ? user.netWorthUSD : '1'));
 
   return (
     <AppDataContext.Provider

@@ -61,15 +61,11 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       'https://cloudflare-eth.com/v1/mainnet',
     ],
     publicJsonRPCWSUrl: 'wss://eth-mainnet.alchemyapi.io/v2/demo',
-    // cachingServerUrl: 'https://cache-api-1.aave.com/graphql',
-    // cachingWSServerUrl: 'wss://cache-api-1.aave.com/graphql',
-    // protocolDataUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v2',
     baseUniswapAdapter: '0xc3efa200a60883a96ffe3d5b492b121d6e9a1f3f',
     baseAssetSymbol: 'ETH',
     wrappedBaseAssetSymbol: 'WETH',
     baseAssetDecimals: 18,
     explorerLink: 'https://etherscan.io',
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
     networkLogoPath: '/icons/networks/ethereum.svg',
   },
   [1101]: {
@@ -94,6 +90,5 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Polygon PoS Bridge',
       url: 'https://wallet.polygon.technology/polygon/bridge',
     },
-    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
 } as const;

@@ -11,6 +11,7 @@ export const ContentContainer = ({ children }: ContentContainerProps) => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        zIndex: 1,
         flex: 1,
         mt: { xs: '-32px', lg: '-46px', xl: '-44px', xxl: '-48px' },
       }}

@@ -7,6 +7,7 @@
 
   position: relative;
   z-index: -1;
+  overflow: hidden;
 }
 
 @keyframes gradient {
@@ -34,4 +35,8 @@
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5), rgba(20, 20, 20, 0.9));
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
+}
+
+.animated-bg-root {
+  z-index: 1;
 }

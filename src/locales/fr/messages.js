@@ -343,8 +343,8 @@
     French: 'Français',
     'Frozen or paused assets': 'Frozen or paused assets',
     'Funds in the Safety Module': 'Fonds dans le Safety Module',
-    "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the AaveDAO treasury.":
-      "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the AaveDAO treasury.",
+    "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the PolyLendDAO treasury.":
+      "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the PolyLendDAO treasury.",
     'Get ABP Token': 'Get ABP Token',
     'Global settings': 'Paramètres globaux',
     'Go Back': 'Retourner',

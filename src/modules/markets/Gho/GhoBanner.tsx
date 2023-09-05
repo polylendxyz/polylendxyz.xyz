@@ -167,7 +167,7 @@ export const GhoBanner = ({ reserve }: GhoBannerProps) => {
               })}
               color="text.secondary"
             >
-              A decentralized, multi-collateralized stablecoin created by AaveDAO.
+              A decentralized, multi-collateralized stablecoin created by PolyLendDAO.
             </Typography>
           </Box>
           <Box

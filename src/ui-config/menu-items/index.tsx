@@ -15,7 +15,7 @@ interface Navigation {
 export const navigation: Navigation[] = [
   {
     link: ROUTES.markets,
-    title: t`Markets`,
+    title: `Welcome`,
     dataCy: 'menuMarkets',
   },
   {

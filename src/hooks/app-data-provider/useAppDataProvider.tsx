@@ -163,7 +163,6 @@ export const AppDataProvider: React.FC = ({ children }) => {
           );
           if (reserve.aIncentivesData) {
             reserve.aIncentivesData.forEach((incentive) => {
-              console.log('hit', incentive);
               acc.positiveProportion = acc.positiveProportion.plus(
                 new BigNumber(incentive.incentiveAPR).multipliedBy(value.underlyingBalanceUSD)
               );

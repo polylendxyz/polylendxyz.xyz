@@ -10,6 +10,7 @@ import { providers } from 'ethers';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 import { ReactNode, useEffect } from 'react';
 import { AddressBlocked } from 'src/components/AddressBlocked';
 import { Meta } from 'src/components/Meta';
@@ -97,6 +98,14 @@ export default function MyApp(props: MyAppProps) {
                         <AppDataProvider>
                           <GasStationProvider>
                             <SharedDependenciesProvider>
+                              <Script
+                                async
+                                src="https://www.googletagmanager.com/gtag/js?id=G-H1PVGZ2FKM"
+                              />
+                              <Script id="google-analytics">
+                                {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-H1PVGZ2FKM');`}
+                              </Script>
+
                               {getLayout(<Component {...pageProps} />)}
                               <SupplyModal />
                               <WithdrawModal />

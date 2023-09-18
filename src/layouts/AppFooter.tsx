@@ -25,7 +25,7 @@ const FOOTER_ICONS = [
     title: 'Lens',
   },
   {
-    href: 'https://discord.gg/kYz7QBPXN7',
+    href: 'https://discord.polylend.xyz/',
     icon: <DiscordIcon />,
     title: 'Discord',
   },

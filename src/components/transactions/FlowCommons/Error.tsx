@@ -41,7 +41,7 @@ export const TxErrorView = ({ txError }: { txError: TxErrorType }) => {
 
         <Typography>
           <Trans>
-            You can report incident to our <Link href="https://discord.gg/kYz7QBPXN7">Discord</Link>{' '}
+            You can report incident to our <Link href="https://discord.polylend.xyz/">Discord</Link>{' '}
             or <Link href="https://github.com/polylendxyz/polylend.xyz">Github</Link>.
           </Trans>
         </Typography>

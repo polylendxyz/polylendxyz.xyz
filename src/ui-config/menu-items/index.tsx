@@ -29,7 +29,7 @@ export const navigation: Navigation[] = [
     dataCy: 'menuDocs',
   },
   {
-    link: 'https://discord.com/invite/W9bNReDF',
+    link: 'https://discord.gg/Yqm87wMg',
     title: t`Discord`,
     dataCy: 'menuDiscord',
   },

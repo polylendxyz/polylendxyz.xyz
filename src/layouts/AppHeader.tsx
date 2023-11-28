@@ -61,55 +61,61 @@ export function AppHeader() {
 
   return (
     <HideOnScroll>
-      <Box
-        component="header"
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        sx={(theme) => ({
-          height: headerHeight,
-          position: 'sticky',
-          top: 0,
-          transition: theme.transitions.create('top'),
-          zIndex: theme.zIndex.appBar,
-          bgcolor: theme.palette.background.header,
-          padding: {
-            xs: mobileMenuOpen || walletWidgetOpen ? '8px 20px' : '8px 8px 8px 20px',
-            xsm: '8px 20px',
-          },
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'space-between',
-          boxShadow: 'inset 0px -1px 0px rgba(242, 243, 247, 0.16)',
-        })}
-      >
-        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-          <NavItems />
-        </Box>
+      <>
+        <div style={{ textAlign: 'center', backgroundColor: '#cc3300', color: '#fff', padding: 5 }}>
+          Protocol has been compromised due to a flash loan attack. Please do not deposit any funds.
+        </div>
 
-        <Box sx={{ flexGrow: 1 }} />
+        <Box
+          component="header"
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          sx={(theme) => ({
+            height: headerHeight,
+            position: 'sticky',
+            top: 0,
+            transition: theme.transitions.create('top'),
+            zIndex: theme.zIndex.appBar,
+            bgcolor: theme.palette.background.header,
+            padding: {
+              xs: mobileMenuOpen || walletWidgetOpen ? '8px 20px' : '8px 8px 8px 20px',
+              xsm: '8px 20px',
+            },
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'space-between',
+            boxShadow: 'inset 0px -1px 0px rgba(242, 243, 247, 0.16)',
+          })}
+        >
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            <NavItems />
+          </Box>
 
-        {!mobileMenuOpen && (
-          <WalletWidget
-            open={walletWidgetOpen}
-            setOpen={toggleWalletWigit}
-            headerHeight={headerHeight}
-          />
-        )}
+          <Box sx={{ flexGrow: 1 }} />
 
-        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-          <SettingsMenu />
-        </Box>
-
-        {!walletWidgetOpen && (
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <MobileMenu
-              open={mobileMenuOpen}
-              setOpen={toggleMobileMenu}
+          {!mobileMenuOpen && (
+            <WalletWidget
+              open={walletWidgetOpen}
+              setOpen={toggleWalletWigit}
               headerHeight={headerHeight}
             />
+          )}
+
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            <SettingsMenu />
           </Box>
-        )}
-      </Box>
+
+          {!walletWidgetOpen && (
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+              <MobileMenu
+                open={mobileMenuOpen}
+                setOpen={toggleMobileMenu}
+                headerHeight={headerHeight}
+              />
+            </Box>
+          )}
+        </Box>
+      </>
     </HideOnScroll>
   );
 }

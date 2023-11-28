@@ -61,9 +61,10 @@ export function AppHeader() {
 
   return (
     <HideOnScroll>
-      <>
+      <Box>
         <div style={{ textAlign: 'center', backgroundColor: '#cc3300', color: '#fff', padding: 5 }}>
           Protocol has been compromised due to a flash loan attack. Please do not deposit any funds.
+          You can withdraw funds or repay borrows.
         </div>
 
         <Box
@@ -115,7 +116,7 @@ export function AppHeader() {
             </Box>
           )}
         </Box>
-      </>
+      </Box>
     </HideOnScroll>
   );
 }

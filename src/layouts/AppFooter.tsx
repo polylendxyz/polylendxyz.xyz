@@ -39,11 +39,6 @@ const FOOTER_ICONS = [
 export function AppFooter() {
   const FOOTER_LINKS = [
     {
-      href: 'https://docs.polylend.xyz',
-      label: <Trans>Documentation</Trans>,
-      key: 'Documentation',
-    },
-    {
       href: 'https://aave.com/privacy-policy/',
       label: <Trans>Privacy</Trans>,
       key: 'Privacy',

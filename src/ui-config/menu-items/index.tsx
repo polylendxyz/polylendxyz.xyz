@@ -24,11 +24,6 @@ export const navigation: Navigation[] = [
     dataCy: 'menuDashboard',
   },
   {
-    link: 'https://docs.polylend.xyz/',
-    title: t`Docs`,
-    dataCy: 'menuDocs',
-  },
-  {
     link: 'https://discord.gg/kYz7QBPXN7',
     title: t`Discord`,
     dataCy: 'menuDiscord',
